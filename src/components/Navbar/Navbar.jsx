@@ -24,15 +24,13 @@ export default function NavComponent() {
       rounded
       className="bg-slate-100 shadow-sm fixed top-0 start-0 end-0 z-30"
     >
-      <Navbar.Brand>
-        <Link to="/">
-          <img
-            src={freshCartLogo}
-            className="mr-3 h-6 sm:h-9"
-            alt="FreshCart Logo"
-          />
-        </Link>
-      </Navbar.Brand>
+      <Link to="/">
+        <img
+          src={freshCartLogo}
+          className="mr-3 h-6 sm:h-9"
+          alt="FreshCart Logo"
+        />
+      </Link>
 
       <div className="flex md:order-2 gap-4">
         {token && (
